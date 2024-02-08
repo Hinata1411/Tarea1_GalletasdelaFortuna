@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Fortuna {
+public class Fortuna implements InterfaceFortuna{
     //Creamos la clase Fortuna en donde estaran los mensajes de la fortuna y el método para obtener la fortuna
 
     //Array privado inmutable que contiene los mensajes de la Fortuna
@@ -42,4 +42,6 @@ public class Fortuna {
         int indiceFortuna = random.nextInt(Mensajes.length);
         return Mensajes[indiceFortuna];
     }
+
+
 }
