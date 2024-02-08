@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Fortuna {
     //Creamos la clase Fortuna en donde estaran los mensajes de la fortuna y el método para obtener la fortuna
 
@@ -34,6 +36,10 @@ public class Fortuna {
             "Siente la felicidad que espera por ti y no olvides atraparla para mantenerla contigo."
     };
 
-
-
+    //Método para obtener la fortuna aleatoriamente
+    public String obtenerFortuna(){
+        Random random = new Random();
+        int indiceFortuna = random.nextInt(Mensajes.length);
+        return Mensajes[indiceFortuna];
+    }
 }
